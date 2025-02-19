@@ -2,8 +2,9 @@
 const nextConfig = {
     output: "export",
     images: {
-      unoptimized: true, // agar gambar tetap bisa tampil di GitHub Pages
+      unoptimized: true, // Supaya gambar tetap muncul di mode export
     },
   };
-
-export default nextConfig;
+  
+  module.exports = nextConfig;
+  
