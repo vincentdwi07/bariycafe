@@ -5,6 +5,7 @@
 
   .cover .tagline{
     top: 32% !important;
+    margin-top: -30px;
     letter-spacing: 6px !important;
   }
 
@@ -14,6 +15,18 @@
 
   .coffee-splash{
     width: 600px !important;
+    transform: translate(-50%, -55%) !important;
+  }
+
+  .coffee-img{
+    transform: translate(-50%, -65%) !important;
+  }
+  
+  .working-hours{
+    margin-bottom: 50px !important;
+  }
+  .coffee-name{
+    top: 80% !important;
   }
 }
 

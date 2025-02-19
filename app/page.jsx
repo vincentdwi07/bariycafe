@@ -1,5 +1,4 @@
 import Navbar from "./Component/navbar";
-import Image from "next/image";
 
 export default function Home() {
   const tasteDesc = ["FRESH", "BOLD", "STRONG", "PURE", "RICH", "DARK", "VIBRANT"]
@@ -21,12 +20,15 @@ export default function Home() {
             <div></div>
             <div></div>
           </div>
-          <img className="coffee-img" src="/cover/coffee-cup-left.png"  alt="" />
-          <div className="coffee-name">*Es Kopi Susu Citraland</div>
-          <img className="cup-shadow" src="/cover/cup-shadow.png" alt="" />
-          <img className="coffee-splash" src="/cover/coffee-splash.png" alt="" />
-          <p className="text-light position-absolute working-hours mx-5">Working Hours: <br />9:00 AM - 9:00 PM</p>
-          <p className="quotes position-absolute mx-5">Drinking coffee not only boosts your energy but also enhances focus, making it the perfect companion for productivity and moments of relaxation!</p>
+          <div className="cover-content">
+            <img className="coffee-img" src="/cover/coffee-cup-left.png"  alt="" />
+            <div className="coffee-name">*Es Kopi Susu Citraland</div>
+            <img className="cup-shadow" src="/cover/cup-shadow.png" alt="" />
+            <img className="coffee-splash" src="/cover/coffee-splash.png" alt="" />
+            <p className="text-light position-absolute working-hours mx-5">Working Hours: <br />9:00 AM - 9:00 PM</p>
+            <p className="quotes position-absolute mx-5">Drinking coffee not only boosts your energy but also enhances focus, making it the perfect companion for productivity and moments of relaxation!</p>
+          </div>
+
       </div>
 
       <div className="aesthetic-place px-3 px-sm-5">
