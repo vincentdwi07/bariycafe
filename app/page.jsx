@@ -1,4 +1,5 @@
 import Navbar from "./Component/navbar";
+import NoodleDivider from "./Component/NoodleDivider";
 
 export default function Home() {
   const tasteDesc = ["FRESH", "BOLD", "STRONG", "PURE", "RICH", "DARK", "VIBRANT"]
@@ -106,6 +107,34 @@ export default function Home() {
             TAKE A SIP 
             <span className="arrow-icon"><i className="bi bi-arrow-right-short"></i></span>
           </a>
+        </div>
+      </div>
+
+      <NoodleDivider/>
+
+      <div className="noodle-section px-3 px-sm-5">
+        <div className="noodle-cover">
+          <h1 className="tagline">Noodle Up Your Best Day!</h1>
+          <div className="noodles-decoration">
+            <img className="noodle-decoration" src="/noodle/noodle-decoration.png" alt="" />
+            <img className="noodle-decoration" src="/noodle/noodle-decoration.png" alt="" />
+            <img className="noodle-decoration" src="/noodle/noodle-decoration.png" alt="" />
+          </div>
+          <img className="noodle-scratch" src="/noodle/noodle-scratch.png" alt="" />
+          <div className="noodle-name">*Mie Jelata</div>
+        </div>
+      </div>
+      <div className="noodle-description gap-5 d-flex text-center align-items-center justify-content-center position-relative">
+        <div className=" position-relative noodle-desc-img">
+          <img className="noodle-decoration-desc" src="/noodle/noodle-decoration.png" alt="" />
+        </div>
+        <div className="noodle-desc-main">
+          <h1 className="text-center tagline">MIE JURAGAN, <br /> MIE JELATA</h1>
+          <p>When our springy noodles meet bold spices, every bite becomes an irresistible craving. Our spicy, chewy noodles are the perfect match for your coffee and the ultimate companion for powering through your tasks.</p>
+          <a href="" className="noodle-btn">Check it Out!</a>
+        </div>
+        <div className=" position-relative  noodle-desc-img">
+          <img className="noodle-decoration-desc" src="/noodle/noodle-decoration.png" alt="" />
         </div>
       </div>
     </>

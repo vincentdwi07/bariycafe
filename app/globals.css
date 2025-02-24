@@ -591,19 +591,17 @@ body {
   font-size: 1.1rem;
 }
 
-
-
 .btn-beverages a{
   color: white;
   text-decoration: none;
   font-size: calc(1em + 1.5vw);
   border: 2px solid white;
-  border-radius: 30px;
   padding: 15px;
   padding-inline: 50px;
   position: relative;
   overflow: hidden;
   transition: all 0.2s ease;
+  z-index: 11;
 }
 
 .btn-beverages a:hover{
@@ -639,4 +637,165 @@ body {
   100%{
     transform: rotate(0deg);
   }
+}
+
+/* NOODLE SECTION */
+.noodle-divider{
+  position: relative;
+  margin-top: -50px;
+}
+
+/*base */
+.noodle-divider svg:nth-child(1){
+  fill: #a88a75;
+  position: absolute;
+  z-index: 10;
+  margin-top: -1px;
+}
+
+.noodle-divider svg:nth-child(2){
+  fill: red;
+  margin-top: 10px;
+  position: absolute;
+  z-index: 9;
+}
+
+.noodle-divider svg:nth-child(3){
+  fill: #ffe0b7;
+  margin-top: 20px;
+  position: absolute;
+  z-index: 7;
+}
+.noodle-divider svg:nth-child(4){
+  fill: red;
+  margin-top: 30px;
+  position: absolute;
+  z-index: 6;
+}
+.noodle-divider svg:nth-child(5){
+  fill: #ffe0b7;
+  margin-top: 40px;
+  position: absolute;
+  z-index: 5;
+}
+.noodle-divider svg:nth-child(6){
+  fill: red;
+  margin-top: 50px;
+  position: absolute;
+  z-index: 4;
+}
+.noodle-divider svg:nth-child(7){
+  fill: #ffe0b7;
+  margin-top: 60px;
+  position: absolute;
+  z-index: 3;
+}
+.noodle-divider svg:nth-child(8){
+  fill: red;
+  margin-top: 70px;
+  position: absolute;
+  z-index: 2;
+}
+.noodle-section{
+  background-color: #ffe0b7;
+  padding-top: calc(140px + 16vw);
+}
+.noodle-cover{
+  height: 100vh;
+  position: relative;
+}
+.noodle-section .tagline{
+  font-size: calc(2rem + 5vw);
+  text-align: center ;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: red;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.noodles-decoration > .noodle-decoration{
+  position: absolute;
+  filter: drop-shadow(0 0 10px black);
+  z-index: 2;
+}
+.noodles-decoration > .noodle-decoration:nth-child(1){
+  width: calc(200px + 10vw);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.noodles-decoration > .noodle-decoration:nth-child(2){
+  width: calc(150px + 10vw);
+  top: 50%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+}
+.noodles-decoration > .noodle-decoration:nth-child(3){
+  width: calc(150px + 10vw);
+  top: 50%;
+  left: 83%;
+  transform: translate(-50%, -50%);
+}
+
+.noodle-name{
+  position: absolute;
+  top: 75%;
+  left: 66%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.noodle-scratch{
+  width: calc(200px + 18vw);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.noodle-description{
+  height: auto;
+  background-color: #ffe0b7;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.noodle-desc-img{
+  flex: 0 0 calc(30%);
+}
+.noodle-desc-img img{
+  filter: drop-shadow(0px 0px 10px black);
+}
+.noodle-desc-main{
+  flex: 0 0 calc(40%);
+  display: flex;
+  flex-direction: column;
+}
+.noodle-desc-main .tagline{
+  font-size: calc(4em);
+  font-weight: bold;
+  color: red;
+}
+.noodle-btn{
+  border: 1.5px solid red;
+  color: red;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+.noodle-btn:hover{
+  background-color: red;
+  color: white;
 }
