@@ -272,6 +272,7 @@ body {
 
 .working-hours{
   bottom: 0;
+  left: 0;
   margin-bottom: 30px;
 }
 
@@ -592,20 +593,28 @@ body {
 }
 
 .btn-beverages a{
+  border: 1.5px solid white;
   color: white;
   text-decoration: none;
-  font-size: calc(1em + 1.5vw);
-  border: 2px solid white;
-  padding: 15px;
+  padding: 10px;
   padding-inline: 50px;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.2s ease;
-  z-index: 11;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  text-align: center;
 }
 
+.btn-beverages img{
+  filter: invert(0);
+}
 .btn-beverages a:hover{
-  box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.5);
+  /* box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.5); */
+  background-color: white;
+  color: black;
+}
+.btn-beverages a:hover img{
+  filter: invert(1);
+  transition: all 0.1s ease;
 }
 .btn-beverages:hover img{
   animation: shakeCup 0.4s linear;
@@ -642,12 +651,12 @@ body {
 /* NOODLE SECTION */
 .noodle-divider{
   position: relative;
-  margin-top: -50px;
+  margin-top: -10px;
 }
 
 /*base */
 .noodle-divider svg:nth-child(1){
-  fill: #a88a75;
+  fill: #a88a75;  
   position: absolute;
   z-index: 10;
   margin-top: -1px;
@@ -708,7 +717,7 @@ body {
   font-size: calc(2rem + 5vw);
   text-align: center ;
   position: absolute;
-  top: 15%;
+  top: 13%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -763,7 +772,7 @@ body {
   height: auto;
   background-color: #ffe0b7;
   overflow: hidden;
-  padding-bottom: 2rem;
+  padding-bottom: 5em;
   padding-top: 1rem;
 }
 
@@ -798,4 +807,198 @@ body {
 .noodle-btn:hover{
   background-color: red;
   color: white;
+}
+
+.working-space{
+  position: relative;
+  margin-top: -10px;
+  justify-content: center;
+  background-color: #ffe0b7;
+}
+.working-space .overlay{
+  position: absolute;
+  height: 30%;
+  background: linear-gradient(to top, #492b17, rgba(0,0,0,0) );
+  content: "";
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.working-space img{
+  object-fit: cover;
+  width: 100%;
+  margin-top: -50px;
+}
+.working-space .tagline{
+  z-index: 2;
+  font-size: calc(1.5rem + 5vw);
+  text-align: center;
+  color: black;
+}
+.working-space-desc{
+  background-color: #492b17;
+  padding-top: 5rem;
+  min-height: 200vh;
+}
+
+.working-space-desc h1{
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-size: calc(1.5rem + 3vw);
+  text-transform: uppercase;
+}
+
+.working-space-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  height: 120vh;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+  
+.working-space-grid-content1 { 
+  grid-area: 1 / 1 / 5 / 6; 
+  background-image: url('/gallery/2.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.working-space-grid-content2 { 
+  grid-area: 5 / 1 / 9 / 2; 
+  background-image: url('/gallery/3.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.working-space-grid-content3 { 
+  grid-area: 5 / 2 / 9 / 6; 
+  background-image: url('/gallery/4.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.working-space-grid .overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: black;
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.working-space-grid h2{
+  color: white;
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.3s ease;
+
+}
+.working-space-grid>div:hover .overlay{
+  opacity: 0.7;
+}
+.working-space-grid>div:hover h2{
+  opacity: 1;
+} 
+.working-space-btn{
+  border: 1.5px solid white;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  padding-inline: 50px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.working-space-btn:hover{
+  background-color: white;
+  color: black;
+}
+
+.kayuputih{
+  height: 100vh;
+  background-image: url('/kayuputih.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-block: 1em;
+  gap: 30px;
+}
+
+.kayuputih .overlay{
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: linear-gradient(to bottom, #492b17 10%, rgba(0,0,0,0)) ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-top: -1px;
+}
+
+.kayuputih .overlay2{
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: #492b17;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-top: -1px;
+}
+
+.kayuputih h1{
+  color: white;
+  z-index: 2;
+}
+
+.kayuputih img{
+  z-index: 2;
+  width: calc(150px + 3vw);
+}
+
+.kayuputih-btn{
+  border: 1.5px solid white;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  padding-inline: 50px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  text-align: center;
+  z-index: 2;
+}
+
+.kayuputih-btn:hover{
+  background-color: white;
+  color: black;
 }

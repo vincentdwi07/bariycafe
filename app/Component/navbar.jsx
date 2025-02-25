@@ -16,10 +16,10 @@ export default function Navbar(){
                         <a className="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Foods</a>
+                        <a className="nav-link" aria-current="page" href="#">Beverages</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Beverages</a>
+                        <a className="nav-link" aria-current="page" href="#">Foods</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" aria-current="page" href="#">Working Space</a>

@@ -101,15 +101,13 @@ export default function Home() {
         </div>
         <div className="btn-beverages text-center mt-5">
           <a href="" className="beverage-link">
-            <span className="me-2">
-              <img style={{ marginTop: "-5px" }} height={30} src="btn-cup-logo.svg" alt="" />
-            </span>
             TAKE A SIP 
-            <span className="arrow-icon"><i className="bi bi-arrow-right-short"></i></span>
           </a>
         </div>
       </div>
 
+
+      {/* NOODLE */}
       <NoodleDivider/>
 
       <div className="noodle-section px-3 px-sm-5">
@@ -131,11 +129,47 @@ export default function Home() {
         <div className="noodle-desc-main">
           <h1 className="text-center tagline">MIE JURAGAN, <br /> MIE JELATA</h1>
           <p>When our springy noodles meet bold spices, every bite becomes an irresistible craving. Our spicy, chewy noodles are the perfect match for your coffee and the ultimate companion for powering through your tasks.</p>
-          <a href="" className="noodle-btn">Check it Out!</a>
+          <a href="" className="noodle-btn">Check it Out</a>
         </div>
         <div className=" position-relative  noodle-desc-img">
           <img className="noodle-decoration-desc" src="/noodle/noodle-decoration.png" alt="" />
         </div>
+      </div>
+
+      {/* WORKING SPACE */}
+      <div className="working-space">
+        <div className="overlay"></div>
+        <h1 className="tagline">GET YOUR TASK <br /> DONE AT <span style={{ textTransform: "capitalize" }}><span style={{ color: "#917536" }}>Bariy</span><span style={{ color: "black" }}>Cafe</span></span></h1>
+        <img src="/working/working-space.png" alt="" />
+      </div>
+      <div className="working-space-desc px-3 px-sm-5">
+          <h1>Rent our working space, <br />get things done.</h1>
+          <p className="p-0 m-0 text-light text-center">At BariyCafe, we provide a comfortable and productive workspace to help you get your tasks done. <br />Whether you need a quiet spot to focus or a cozy corner to work, you can rent your space by simply contacting our admin!</p>
+          <div className="working-space-grid">
+            <div className="working-space-grid-content1">
+              <div className="overlay"></div>
+              <h2>Working Area</h2>
+            </div>
+            <div className="working-space-grid-content2">
+              <div className="overlay"></div>
+              <h2 className="text-center">Standing <br /> AC</h2>
+            </div>
+            <div className="working-space-grid-content3">
+              <div className="overlay"></div>
+              <h2>Screen Projector</h2>
+            </div>
+          </div>
+          <div className="w-100 d-flex justify-content-center">
+            <a className="working-space-btn" href="">EXPLORE NOW</a>
+          </div>
+      </div>
+
+      <div className="kayuputih px-3 px-sm-5">
+        <div className="overlay"></div>
+        <div className="overlay2"></div>
+        <img src="/logo-kayuputih.png" alt="" />
+        <h1>CHECK OUR PARTNER</h1>
+        <a href="" className="kayuputih-btn">VISIT NOW</a>
       </div>
     </>
   );
