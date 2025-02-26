@@ -144,7 +144,6 @@ export default function Home() {
       </div>
       <div className="working-space-desc px-3 px-sm-5">
           <h1>Rent our working space, <br />get things done.</h1>
-          <p className="p-0 m-0 text-light text-center">At BariyCafe, we provide a comfortable and productive workspace to help you get your tasks done. <br />Whether you need a quiet spot to focus or a cozy corner to work, you can rent your space by simply contacting our admin!</p>
           <div className="working-space-grid">
             <div className="working-space-grid-content1">
               <div className="overlay"></div>

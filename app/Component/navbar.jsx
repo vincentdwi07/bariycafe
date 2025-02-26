@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Navbar(){
     return<>
@@ -13,16 +14,16 @@ export default function Navbar(){
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Home</a>
+                        <Link className="nav-link" href="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Beverages</a>
+                        <Link className="nav-link" href="/beverages">Beverages</Link>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" aria-current="page" href="#">Foods</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Working Space</a>
+                        <a className="nav-link pe-0" aria-current="page" href="#">Working Space</a>
                     </li>
                 </ul>
                 </div>
